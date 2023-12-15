@@ -2,18 +2,24 @@
 <html>
     <head>
         <title>THE ENIGMA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Test Enigma Website">
+        <meta name="keywords" content="The Riddler, Enigma, Villains">
+        <meta name="author" content="s1gm9">
+        <meta http-equiv="refresh" content="30">
     </head>
-    <body>
-        <h1>Edward Nigma (E-NIGMA)</h1>
+    <body style="background-color: black;">
+        <h1 style="color: greenyellow;">Edward Nigma (E-NIGMA)</h1>
         <hr/>
         <!-- This is my first comment-->
         <br/>
         <a href="https://en.wikipedia.org/wiki/Riddler" target="_blank">
             <img src="images/AnimationRiddler.jpeg" height="300" alt="This is an image of The riddler" title="Enigma/Riddler">
         </a>
-        <p>At the heart of this enigma is the fact that purpose, much like a unicorn, is revered and sought after but rarely seen in its true form</p>
+        <p style="color: white;">At the heart of this enigma is the fact that purpose, much like a unicorn, is revered and sought after but rarely seen in its true form</p>
         <br>
-        <h2>Enigma vs Batman - Batman- Assault on Arkham</h2>
+        <h2 style="color: greenyellow;">Enigma vs Batman - Batman- Assault on Arkham</h2>
         <video controls autoplay muted loop height="300" width="500">
             <source src="videos/Enigma vs Batman - Batman- Assault on Arkham.mkv">
             <source src="videos/Enigma vs Batman - Batman- Assault on Arkham.WebM">
@@ -25,19 +31,20 @@
             <source src="audios/21_savage_all_the_smoke_official_music_video_aac_31485.mp3">
             Unsupported: HTML5 audio
         </audio>
-        <p><i>Enigma/Riddler</i></p>
+        <br>
+        <p style="color: white;"><i>Enigma/Riddler</i></p>
         <a href="https://en.wikipedia.org/wiki/Riddler" target="_blank">
             <img src="images/Riddl.webp" height="300" alt="Another riddler image" title="Enigma/Riddler2">
         </a>
-        <p><b>Riddle</b> me this, <b>Riddle</b> me that</p>
-        <p><big>Enigma<sup>(Superior)</sup></big>  <b>VS</b> <small>Batman<sub>(Inferior)</sub></small></p>
-        <p><b>Villain</b> of the semester: <del>THE JOKER</del> <insert>Enigma<insert></p>
+        <p style="color: white;"><b><span style="color: greenyellow;">Riddle</span></b> me this, <b><span style="color: greenyellow;">Riddle</span></b> me that</p>
+        <p style="color: white;"><big>Enigma<sup>(Superior)</sup></big>  <b>VS</b> <small>Batman<sub>(Inferior)</sub></small></p>
+        <p style="color: white;"><b><span style="color: red;">Villain</span></b> of the semester: <del><span style="color: red;">THE JOKER</span></del> <insert><span style="color: greenyellow;">Enigma</span></insert></p>
         <br>
-        <h3>ABOUT ENIGMA</h3>
-        <p><mark>Enigma</mark> comes from a Greek word that means <b><i>to speak in riddles</i></b> It applies to things, as well as to people, that puzzle one's mind. Egypt's ancient pyramids and quantum mechanics, for example, might be described as <mark>enigmas</mark>, as well as physicist Stephen Hawking. In these uses, the word's meaning is a figurative extension of the original <b><i>riddle</i></b> sense.</p>
+        <h3 style="color: white;">ABOUT <span style="color: greenyellow;">ENIGMA</span></h3>
+        <p style="color: white;"><mark>Enigma</mark> comes from a Greek word that means <b><i><span style="color: yellow;">to speak in riddles</span></i></b> It applies to things, as well as to people, that puzzle one's mind. Egypt's ancient pyramids and quantum mechanics, for example, might be described as <mark>enigmas</mark>, as well as physicist Stephen Hawking. In these uses, the word's meaning is a figurative extension of the original <b><i><span style="color: yellow;">riddle</span></i></b> sense.</p>
 
-        <h3>Facts about the Riddler</h3>
-            <ul>
+        <h3 style="color: white;">Facts about <span style="color: greenyellow;">The Riddler</span></h3>
+            <ul style="color: white;">
                 <li>He Debuted During The Golden Age</li>
                 <li>He's Batman's Most Rational Rogue</li>
                 <li>He Goes By Several Names</li>
@@ -49,17 +56,39 @@
                 <li>He Entered A Coma After Fighting The Shining Knight</li>
                 <li>The War Of Jokes And Riddles</li>
             </ul>
-            <dl>
-                <dt>Protagonist</dt>
+            <br>
+            <dl style="color: white;">
+                <dt><span style="color: yellow;">Protagonist</span></dt>
                     <dd>The Riddler</dd>
-                <dt>Antagonist</dt>
+                <dt><span style="color: yellow;">Antagonist</span></dt>
                     <dd>The Big black Bat</dd>
             </dl>
-        <h4>Enigma's Riddles</h4>
+            <br>
+        <h4 style="color: white;"><span style="color: greenyellow;">Enigma's</span> <span style="color: yellow;">Riddles</span></h4>
         <a href="https://en.wikipedia.org/wiki/Riddler" target="_blank">
             <img src="images/RiddlerAnimation4.jpeg" height="300" alt="Riddler's Riddles" title="Riddler's Riddles">
         </a>
-        <ol type="i">
+        <br>
+        <button onclick="RiddleMe()" style="background-color: black; color: greenyellow; border-radius: 0;">RiddleMe</button>
+        <br>
+        <p id="RiddleMe" style="color: greenyellow;">Riddle Riddle</p>
+        <script>
+            let num = 0;
+            function RiddleMe()
+            {
+                if (num < 1)
+                {
+                    document.getElementById("RiddleMe").innerHTML = "Riddle me this, Riddle me that";
+                    num ++;
+                }
+                else
+                {
+                    document.getElementById("RiddleMe").innerHTML = "Riddle Riddle";
+                    num --;
+                }
+            }
+        </script>
+        <ol style="color: white;" type="i">
             <li>I can be cracked. I can be made. I can be told. I can be played. What am I?</li>
             <li>What occurs once in every minute, twice in a moment, but never in a thousand years?</li>
             <li>I am… ‘A house without the head of head, knitted deep within the trees. A head that lies without its eyes, stitched silently to tearse.’ What am I?</li>
@@ -70,11 +99,12 @@
             <li>How does an exhibitionist garbage collector break up with his girlfriend?</li>
             <li>What has four legs, smokes a pipe, but cannot walk, see or talk?</li>
         </ol>
-        <h4>Solutions</h4>
+        <br>
+        <h4 style="color: greenyellow;">Solutions</h4>
         <a href="https://en.wikipedia.org/wiki/Riddler" target="_blank">
-            <img src="images/RiddlerAnimation2.jpeg" height="300" alt="A cool Riddler image" title="A cool Riddler image">
+            <img src="images/RiddlerAnimation2.jpeg" height="300" alt="Cool Riddler image" title="Riddler image">
         </a>
-        <ol type="i">
+        <ol style="color: white;" type="i">
             <li>A joke.</li>
             <li>The letter “M”.</li>
             <li>A louse.</li>
@@ -85,16 +115,10 @@
             <li>He dumps her in public.</li>
             <li>A stove.</li>
         </ol>
-    <a href="https://www.chess.com" target="_self" title="Play chess at chess.com">
-        Play Chess against Enigma
+    <br>
+    <a href="page2.html" target="_self" title="go to next page"> 
+        <button style="background-color: black; color: greenyellow; border-radius: 0;">Next</button>
     </a>
     <br>
-    <a href="page2.html" target="_self" title="go to page 2"> 
-        Next
-    </a>
-    <br>
-    <a href="mailto:Enigma@gmail.com" target="_self" title="Email a Enigma">
-        Email Enigma
-    </a>
      </body>
 </html>
